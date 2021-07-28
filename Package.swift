@@ -16,7 +16,8 @@ let package = Package(
       .package(url: "https://github.com/Quick/Nimble.git", from: "9.0.0"),
     ],
     targets: [
-      .target(name: "Fakery", resources: [.process("Resources")]),
+     // .target(name: "Fakery", resources: [.process("Resources")]),
+      .target(name: "Fakery"),
       .testTarget(name: "FakeryTests", dependencies: ["Fakery", "Quick", "Nimble"], path: "Tests/Fakery")
     ]
 )
